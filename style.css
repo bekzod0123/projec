@@ -1,0 +1,212 @@
+/* 
+.wrapper{
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+
+.rotate{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: rotate 8s linear infinite;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid red;
+    top: -50px;
+    left: -50px;
+    animation: rotate2 8s linear infinite;
+}
+
+
+@keyframes rotate2 {
+    0%{
+        background: white;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        background: white;
+    }
+}
+
+
+
+
+ */
+
+
+ /* .wrapper{
+    margin: 200px auto;
+    width: 220px;
+    height: 220px;
+    border: 1px solid red;
+    position: relative;
+ }
+
+
+ .ball{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    animation: bouncing 5s infinite;
+ }
+
+
+ /*  ease -       tez - tez - sekin  */
+ /*  ease-in -    sekin - tez - o'rta  */
+ /*  ease-out     orta - sekin - sekin  */
+ /*  ease-in-out  sekin - orta - tez  */
+/* 
+ @keyframes bouncing {
+    40%, 70%, 90% {
+        bottom: 0;
+    }
+
+    0%{
+        bottom: 200px;
+        left: 0;
+        animation-timing-function: ease-in;
+    }
+    55%{
+        bottom: 50px;
+        animation-timing-function: ease-in;
+    }
+    80%{
+        bottom: 25px;
+        animation-timing-function: ease-in;
+    }
+    95%{
+        bottom: 10px;
+        animation-timing-function: ease-in;
+    }
+    100%{
+        bottom: 0;
+        left: 200px;
+    }
+
+
+
+ } */
+
+ 
+
+ body{
+    background: rgb(94, 94, 210);
+    display: flex;
+    justify-content: center;
+ }
+
+
+ .box{
+    width: 1000px;
+    height: 1000px;
+    border: 3px solid red;
+    border-radius: 20px;
+    background: rgb(60, 56, 56);
+    margin: 200px auto;
+ }
+
+
+ .smile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    animation: smile 5s infinite;
+    background-color: yellow;
+ }
+
+
+ @keyframes smile{
+    0%{
+        transform: translateX(0px) rotate(0);
+    }
+    25%{
+        transform: translateX(50%) rotate(-180deg);
+    }
+    50%{
+        transform: translateX(800px) translateY(800px) rotate(360deg);
+        background-color: yellow;
+    }
+    75%{
+        transform: translateX(0px) translateY(800px) rotate(-180deg);
+        background-color: red;
+    }
+ }
+
+
+ .smile::before{
+    content:  ' ';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 25%;
+ }
+ .smile::after{
+    content:  ' ';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 60%;
+ }
+
+
+ .border{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border-bottom: 2px solid black;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
